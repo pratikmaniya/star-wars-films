@@ -32,9 +32,11 @@ This is a React application that displays information about Star Wars films usin
    ```bash
    git clone https://github.com/pratikmaniya/star-wars-films.git
    cd star-wars-films
+   ```
 2. **Install Dependencies:** Run the following command to install all necessary dependencies:
    ```bash
    npm install
+   ```
 3. **Set Up Environment Variables:** Create a `.env` file in the root directory with the following content:
    ```plaintext
    REACT_APP_API_URL=https://swapi-graphql.netlify.app/.netlify/functions/index
@@ -46,3 +48,4 @@ This is a React application that displays information about Star Wars films usin
 5. **Running Tests:** To run the test suite, use:
     ```bash
     npm test
+    ```
