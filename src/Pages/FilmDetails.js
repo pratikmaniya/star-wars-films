@@ -9,7 +9,10 @@ import { StyledCard, CharacterBox, BackButton } from '../Styles/FilmDetailsStyle
 const FilmDetails = () => {
   const { id } = useParams();
   const navigate = useNavigate();
-  const { loading, error, data } = useQuery(GET_FILM_DETAILS, { variables: { id } });
+  const { loading, error, data } = useQuery(GET_FILM_DETAILS, {
+    variables: { id },
+    fetchPolicy: 'cache-first',
+  });
 
   if (loading) return <Typography align="center" variant="h6">Loading...</Typography>;
   if (error) {

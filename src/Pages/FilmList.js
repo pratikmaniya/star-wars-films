@@ -8,7 +8,9 @@ import { ButtonContainer, StyledCard, StyledButton } from '../Styles/FilmListSty
 
 const FilmList = () => {
     const navigate = useNavigate();
-    const { loading, error, data } = useQuery(GET_FILMS);
+    const { loading, error, data } = useQuery(GET_FILMS, {
+        fetchPolicy: 'cache-first', // Use cached data if available
+    });
     const [sortKey, setSortKey] = useState('title');
 
     if (loading) return <Typography align="center" variant="h6">Loading...</Typography>;
