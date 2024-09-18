@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# Star Wars Films App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React application that displays information about Star Wars films using GraphQL. It allows users to view a list of all Star Wars films, sort them by title, release date, or episode number, and view detailed information about a specific film, including characters and the opening crawl.
 
-## Available Scripts
+## Features
+- List all Star Wars films with title, release date, director, and episode number.
+- Sort films by title, release date, or episode number.
+- View detailed information about a specific film, including characters and the opening crawl.
+- Responsive design for various devices and screen sizes.
 
-In the project directory, you can run:
+## Technologies Used
+- **React:** JavaScript library for building user interfaces.
+- **GraphQL:** Query language for APIs, used for fetching data.
+- **Apollo Client:** GraphQL client for interacting with the API.
+- **Material-UI:** React component library for UI design.
+- **Jest & React Testing Library:** Testing framework and utilities for unit and integration tests.
 
-### `npm start`
+## Project Structure
+- `src/`: Contains the main source code.
+   - `apollo/`: GraphQL client and queries.
+   - `components/`: Reusable UI components.
+   - `pages/`: Page components for different routes.
+   - `styles/`: Styled components and CSS.
+   - `ErrorBoundary.js`: Component for error handling.
+   - `App.js`: Main application component.
+   - `index.js`: Entry point of the application.
+- `.gitignore`: Specifies files and directories to be ignored by Git.
+- `README.md`: Project documentation.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Setup Instructions
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/pratikmaniya/star-wars-films.git
+   cd star-wars-films
+2. **Install Dependencies:** Run the following command to install all necessary dependencies:
+   ```bash
+   npm install
+3. **Set Up Environment Variables:** Create a `.env` file in the root directory with the following content:
+   ```plaintext
+   REACT_APP_API_URL=https://swapi-graphql.netlify.app/.netlify/functions/index
+4. **Run the Application:** Start the Development Server: Use the following command to start the development server:
+    ```bash
+    npm start
+    ```
+   Access the app at http://localhost:3000/.
+5. **Running Tests:** To run the test suite, use:
+    ```bash
+    npm test
