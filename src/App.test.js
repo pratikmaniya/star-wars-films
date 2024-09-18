@@ -43,7 +43,7 @@ test('navigates to FilmList and FilmDetails', async () => {
     expect(screen.getByText('A New Hope')).toBeInTheDocument();
   });
 
-  fireEvent.click(screen.getByText('A New Hope')); // Adjust based on actual link/button
+  fireEvent.click(screen.getByText('A New Hope'));
   await waitFor(() => {
     expect(screen.getByText('Director: George Lucas')).toBeInTheDocument();
   });
